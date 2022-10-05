@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: darksalmon;
+  font-family: 'Fredoka', sans-serif;
+  font-weight:600;
+}
+header,
+main {
+  width: 100%;
+}
+
+button, select{
+  font-size: 16px;
+  padding: 10px 24px;
+  margin-left: 10px;
+  border-radius: 14px;
+  border-style: none;
+  &:hover {
+    background-color: lightcoral;
+    color: white;
+  }
+}
+
+
+
+.logo {
+  font-family: 'Pacifico', sans-serif;
+  font-size: 50px;
+}
+
+.layout {
+  margin: auto;
+  max-width: 800px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.soundcloud {
+  max-height: 120px;
+}
+
+.flexbox{
+  display:flex;
+  justify-content: center;
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:400px;
+}
+
+.emotion {
+  &__title {
+    padding-bottom: 15px;
+  }
+  &__label {
+    font-size: 22px;
+  }
+  &__img {
+    object-fit: contain;
+    object-position: center;
+  }
+  &__p{
+    padding-top:10px;
+    font-size:22px;
+    padding-bottom:5px;
+    text-align: center;
+  }
+}
+
+.genre__p {
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+.genre__span {
+  font-family: 'Pacifico', sans-serif;
+  font-size: 36px;
+}
+

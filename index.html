@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Mood Ring</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Fredoka"
+    />
+</head>
+
+<body>
+    <header class="backgroundColor">
+        <div class="layout">
+            <h1 class="logo">Music Mood Ring</h1>
+        </div>
+    </header>
+    <div class="layout">
+        <iframe class="soundcloud"
+        width="100%"
+        height="300"
+        allow='autoplay'
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271789769&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+    ></iframe
+    ></div>
+    <main class="backgroundColor">
+        <div class="layout">
+            <div class="emotion">
+                <h1 class="emotion__title">
+                    What genre of music should I listen to?
+                </h1>
+                <form
+                    action="https://binaryjazz.us/genrenator-api/v1/genre/1"
+                    class="emotion__selector"
+                    method="GET"
+                >
+                    <label for="emotion" class="emotion__label">What mood are you in?</label>
+                    <select name="emotion" id="emotion__search">
+                        <option value="ugh" disabled selected hidden>--Select your option--</option>
+                        <option value="angry">Angry</option>
+                        <option value="bored">Bored</option>
+                        <option value="calm">Calm</option>
+                        <option value="happy">Happy</option>
+                        <option value="hopeful">Hopeful</option>
+                        <option value="nervous">Nervous</option>
+                        <option value="proud">Proud</option>
+                        <option value="sad">Sad</option>
+                        <option value="silly">Silly</option>
+                        <option value="surprised">Surprised</option>
+                    </select>
+                    <button class="button" type="submit">Pick genre for me!</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="layout flexbox">
+            <section class="container"></section>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
