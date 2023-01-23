@@ -9,33 +9,45 @@ body {
   font-weight: 600;
 }
 
+/* tablet sizing mixin */
+/* desktop mixin */
 header,
 main {
   width: 100%;
 }
 
 button, select {
+  background-color: white;
   font-size: 16px;
-  padding: 10px 24px;
-  margin-left: 10px;
+  padding: 1rem;
   border-radius: 14px;
   border-style: none;
+  border: 1px solid black;
 }
 button:hover, select:hover {
   background-color: lightcoral;
   color: white;
 }
 
+button {
+  width: 8rem;
+}
+
 .logo {
   font-family: "Pacifico", sans-serif;
-  font-size: 50px;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 4rem;
+  }
 }
 
 .layout {
   margin: auto;
   max-width: 800px;
-  padding-top: 20px;
-  padding-bottom: 10px;
 }
 
 .soundcloud {
@@ -54,23 +66,33 @@ button:hover, select:hover {
   width: 400px;
 }
 
+.emotion {
+  padding: 0.5rem 1.25rem;
+}
 .emotion__title {
-  padding-bottom: 15px;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 .emotion__label {
-  font-size: 22px;
+  font-size: 1.2rem;
+  line-height: 2;
 }
 .emotion__img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+  max-height: 8rem;
 }
 .emotion__p {
   padding-top: 10px;
   font-size: 22px;
   padding-bottom: 5px;
   text-align: center;
+}
+.emotion__search {
+  font-size: 0.8rem;
+  margin: 0 0.5rem 1rem 0;
 }
 
 .genre__p {

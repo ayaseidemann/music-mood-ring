@@ -8,35 +8,60 @@ body {
   font-family: 'Fredoka', sans-serif;
   font-weight:600;
 }
+
+ /* tablet sizing mixin */
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+      @content;
+  }
+}
+
+
+/* desktop mixin */
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+      @content;
+  }
+}
+
 header,
 main {
   width: 100%;
 }
 
 button, select{
+  background-color: white;
   font-size: 16px;
-  padding: 10px 24px;
-  margin-left: 10px;
+  padding: 1rem;
   border-radius: 14px;
   border-style: none;
+  border: 1px solid black;
   &:hover {
     background-color: lightcoral;
     color: white;
   }
 }
 
+button {
+  width: 8rem;
+}
+
 
 
 .logo {
   font-family: 'Pacifico', sans-serif;
-  font-size: 50px;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 1rem;
+
+  @include tablet {
+    font-size: 4rem;
+  }
 }
 
 .layout {
   margin: auto;
   max-width: 800px;
-  padding-top: 20px;
-  padding-bottom: 10px;
 }
 
 .soundcloud {
@@ -56,21 +81,31 @@ button, select{
 }
 
 .emotion {
+
+  padding: 0.5rem 1.25rem;
   &__title {
-    padding-bottom: 15px;
+    text-align: center;
+    padding-bottom: 1rem;
   }
   &__label {
-    font-size: 22px;
+    font-size: 1.2rem;
+    line-height: 2;
   }
   &__img {
     object-fit: contain;
     object-position: center;
+    max-height: 8rem;
   }
   &__p{
     padding-top:10px;
     font-size:22px;
     padding-bottom:5px;
     text-align: center;
+  }
+
+  &__search {
+    font-size: 0.8rem;
+    margin: 0 0.5rem 1rem 0;
   }
 }
 
