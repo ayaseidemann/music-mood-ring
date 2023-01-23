@@ -66,6 +66,10 @@ button {
 
 .soundcloud {
   max-height: 120px;
+
+  @include tablet{
+    margin-bottom: 1rem;
+  }
 }
 
 .flexbox{
@@ -86,6 +90,10 @@ button {
   &__title {
     text-align: center;
     padding-bottom: 1rem;
+
+    @include tablet{
+      text-align: left;
+    }
   }
   &__label {
     font-size: 1.2rem;
@@ -106,6 +114,10 @@ button {
   &__search {
     font-size: 0.8rem;
     margin: 0 0.5rem 1rem 0;
+
+    @include tablet{
+      margin-left: 1rem;
+    }
   }
 }
 

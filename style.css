@@ -53,6 +53,11 @@ button {
 .soundcloud {
   max-height: 120px;
 }
+@media screen and (min-width: 768px) {
+  .soundcloud {
+    margin-bottom: 1rem;
+  }
+}
 
 .flexbox {
   display: flex;
@@ -72,6 +77,11 @@ button {
 .emotion__title {
   text-align: center;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .emotion__title {
+    text-align: left;
+  }
 }
 .emotion__label {
   font-size: 1.2rem;
@@ -93,6 +103,11 @@ button {
 .emotion__search {
   font-size: 0.8rem;
   margin: 0 0.5rem 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  .emotion__search {
+    margin-left: 1rem;
+  }
 }
 
 .genre__p {
